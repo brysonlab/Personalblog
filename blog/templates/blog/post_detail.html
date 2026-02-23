@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        small {
+            color: gray;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/">⬅ Back to Home</a>
+
+        <h1>{{ post.title }}</h1>
+        <small>Posted on {{ post.created_at }}</small>
+        <hr>
+
+        <p>{{ post.content }}</p>
+    </div>
+
+</body>
+</html>
